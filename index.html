@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Number Guesser 2.0</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <header>NUMBER <span class="guesser">GUESSER</span> 2.0<span class="subheader">Return of the Guess</span></header>
+  <section class="flex-container">
+    <main>
+      <form class="range-form">
+        <h3 class="range-head">Set Range</h3>
+        <div class="range-div">
+          <label>Min Range</label>
+          <input
+            id="min-range"
+            type="number"
+            name="min-range"
+          />
+        </div>
+        <div class="range-div">
+          <label>Max Range</label>
+          <input
+            id="max-range"
+            type="number"
+            name="max-range"
+          />
+        </div>
+        <button class="submit-range-btn">Submit Range</button>
+      </form>
+      <div class="player-interface-div">
+        <form class="player-interface">
+          <h4 class="display-current-range">The Current Range is <span class="range-num range-num-min">1</span> to <span class="range-num range-num-max">10</span></h4>
+          <h3 class="challenger">Challenger One</h3>
+          <input
+            id="player-one-name"
+            type="text"
+            name="player-one-name"
+            placeholder="Player One"
+          />
+          <input
+            id="player-one-guess"
+            type="number"
+            name="player-one-guess"
+            placeholder="Player one's guess"
+          /><br />
+          <h3 class="challenger">Challenger Two</h3>
+          <input
+            id="player-two-name"
+            type="text"
+            name="player-two-name"
+            placeholder="Player Two"
+          />
+          <input
+            id="player-two-guess"
+            type="number"
+            name="player-two-guess"
+            placeholder="Player two's guess"
+          /><br />
+        </form>
+        <div class="player-btn-interface">
+          <button class="submit-btn disabled" disabled>Submit guess</button>
+          <button class="reset-btn disabled" disabled>Reset Game</button>
+          <button class="clear-btn disabled" disabled>Clear Guesses</button>
+        </div>
+      </div>
+      <section class="player-feedback">
+        <h3>Latest Score:</h3>
+        <div class="player-feedback-div">
+          <div class="player-guess-feedback">
+            <p class="player-one-feedback-name"></p>
+            <p class="current-guess-p">current guess:</p>
+            <h2 class="player-one-current-guess player-current-guess"></h2>
+            <p class="player-one-feedback"></p>
+          </div>
+          <div class="verticle-line"></div>
+          <div class="player-guess-feedback">
+            <p class="player-two-feedback-name"></p>
+            <p class="current-guess-p">current guess:</p>
+            <h2 class="player-two-current-guess player-current-guess"></h2>
+            <p class="player-two-feedback"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <aside class="aside">
+      <h1 class="message-to-player"></h1>
+    </aside>
+  </section>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
